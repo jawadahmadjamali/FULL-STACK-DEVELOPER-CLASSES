@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>03 - Specificity</title>
+  <style>
+    div {
+      color: blue;
+    }
+
+    .class {
+      color: green;
+    }
+
+    #id {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h2>Specificity</h2>
+
+  <div>This div has only ELEMENT selector (blue)</div>
+
+  <div class="class">This div has CLASS selector (green wins)</div>
+
+  <div id="id" class="class">This div has CLASS + ID (orange wins)</div>
+
+  <div style="color: red;">This div has INLINE style (red wins all)</div>
+  <a href="./page4.html">Next</a>
+</body>
+</html>

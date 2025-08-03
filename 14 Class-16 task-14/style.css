@@ -1,0 +1,35 @@
+/* 1. Browser origin is not defined here (default black) */
+
+/* 2. Author styles */
+p {
+    color: blue;
+    /* Element selector */
+}
+
+.class-example {
+    color: green;
+    /* Class selector */
+}
+
+#id-example {
+    color: orange;
+    /* ID selector */
+}
+
+.important-rule {
+    color: red !important;
+    /* Highest unless overridden by stronger !important */
+}
+
+.order {
+    color: gray;
+}
+
+.order {
+    color: teal;
+    /* This will win due to order */
+}
+
+.element-vs-inline {
+    color: violet;
+}
