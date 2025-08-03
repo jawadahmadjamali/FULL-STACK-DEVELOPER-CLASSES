@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade Algorithm - Pure Code Demo</title>
+</head>
+<body>
+<h1>CSS Cascade Algorithm - All Concepts</h1>
+  <ul>
+    <li><a href="01_origin.html">1. Style Origin</a></li>
+    <li><a href="02_important.html">2. Importance</a></li>
+    <li><a href="03_specificity.html">3. Specificity</a></li>
+    <li><a href="04_order.html">4. Order of Appearance</a></li>
+    <li><a href="05_attr_vs_element.html">5. Attribute vs Element</a></li>
+  </ul>
+  <h1>CSS Cascade Algorithm - Demo</h1>
+
+  <!-- 1. Browser default -->
+  <h2>1️⃣ Browser Default</h2>
+  <p><em>This is browser default (no style tag used) — probably black.</em></p>
+
+  <!-- 2. Element selector -->
+  <h2>2️⃣ Element Selector</h2>
+  <p>This paragraph uses a tag selector → blue.</p>
+
+  <!-- 3. Class selector -->
+  <h2>3️⃣ Class Selector</h2>
+  <p class="class-example">This uses a class → green beats tag selector.</p>
+
+  <!-- 4. ID selector -->
+  <h2>4️⃣ ID Selector</h2>
+  <p id="id-example" class="class-example">ID wins over class → orange.</p>
+
+  <!-- 5. Inline style -->
+  <h2>5️⃣ Inline Style</h2>
+  <p style="color: brown;">Inline style wins over ID → brown.</p>
+
+  <!-- 6. !important -->
+  <h2>6️⃣ !important Rule</h2>
+  <p class="important-rule" style="color: purple;">
+    This has inline purple, but red `!important` wins.
+  </p>
+
+  <!-- 7. Order of appearance -->
+  <h2>7️⃣ Order of Appearance</h2>
+  <p class="order">Same class name, last one wins → teal.</p>
+
+  <!-- 8. Attribute vs Element -->
+  <h2>8️⃣ Attribute (Inline) vs Element</h2>
+  <p class="element-vs-inline" style="color: black;">
+    Element style says violet, but inline wins → black.
+  </p>
+
+</body>
+</html>
