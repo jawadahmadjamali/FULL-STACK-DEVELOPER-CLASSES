@@ -1,5 +1,6 @@
 body {
     background-color: #e7ffe5;
+    overflow: hidden scroll;
 }
 
 * {
@@ -114,7 +115,7 @@ li a {
     background-color: #f8f8f3;
     color: rgb(32, 32, 32);
     transition: linear 0.6s;
-    border: 1px solid rgba(0, 0, 0, 0.288);
+    border: 1px solid #00000049;
 }
 
 .text {
@@ -128,14 +129,66 @@ li a {
 .animation {
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 80%;
+    height:500px ;
+    margin: auto;
+    background-color: rgb(68, 68, 168);
+    border-radius: 10px;
+    margin-top: 60px;
+     flex-wrap: wrap;
+}
+.animation img{
+    position: absolute;
+    right: 10%;
+    animation: sir 3s linear infinite 1s;
+    transform: rotate(34deg);
+    animation-delay: 10s;
+}
+@keyframes sir{
+    50%{
+        transform: rotate(-45deg);
+        
+    }
+    100%{
+         
+        transform: translateX(-700px);
+    
+        
+    }
 }
 
-iframe {
-    border-radius: 15px;
-    margin-top: 70px;
-
+.animation span{
+    background-color: #131313;
+    margin:30px;
+    color: #eeff00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bolder;
+    font-size: 25px;
+    height: 80px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
-
+.anim1{
+    animation: lefte linear infinite 1s ;
+    overflow: hidden;
+}
+@keyframes lefte{
+    to{ transform: translateX(0px);}
+    100%{ transform: translateX(400px)  }
+}
+.anim2{
+    animation: righte linear infinite 1s ;
+    overflow: hidden;
+}
+@keyframes righte{
+    to{ transform: translateX(-0px);}
+    100%{ transform: translateX(-500px)  }
+}
 .intro {
     display: flex;
     justify-content: center;
@@ -315,37 +368,42 @@ iframe {
 }
 
 .lastgrid {
+    height: 500px;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 400px;
-    width: 80%;
     background-color: #caffc6;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
-
-.lstbox1 {
+.lstbox1{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .bgone {
     background-color: #eae211;
     background-image: url(./new.png);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 250px;
     background-position-x: center;
     background-position-y: center;
-    height: 250px;
-    width: 70%;
-    border-radius: 15px;
-    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    margin-top: 30px;
 }
 
 .lstbox2 {
     display: flex;
-    justify-content: center;
+     flex-direction: column;
+      align-items: center;
+    gap: 20px;
 
 }
 
@@ -353,18 +411,20 @@ iframe {
     background-color: #f7f6f4;
     background-image: url(./64e26a5a4151507013d37427_18-p-500.png);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 250px;
     background-position-x: center;
     background-position-y: center;
-    height: 250px;
-    width: 70%;
-    border-radius: 15px;
-    margin-top: 50px;
+     height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    margin-top: 30px;
 }
 
 .lstbox3 {
     display: flex;
-    justify-content: center;
+     flex-direction: column;
+     align-items: center;
+    gap: 20px;
 
 }
 
@@ -372,76 +432,41 @@ iframe {
     background-color: #eae211;
     background-image: url(./64e26a59b4f5ea9cdd891f1f_22-p-500.png);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 250px;
     background-position-x: center;
     background-position-y: center;
-    height: 250px;
-    width: 70%;
-    border-radius: 15px;
-    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    margin-top: 30px;
 }
 
-.lastext {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 100px;
-    width: 80%;
-    margin: auto;
-    background-color: #caffc6;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: -30px;
+
+.lastgrid h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e2e2e;
 }
 
-.text1 {
+.lastgrid pre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+color: #2e2e2e;
+}
+
+.text1{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
-
-.text2 {
+.text2{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
+    gap: 20px;
 }
-
-.text3 {
+.text3{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
-.text1 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.text1 pre {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.text2 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.text2 pre {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.text3 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.text3 pre {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
 footer{ height: 300px;}
