@@ -1,0 +1,160 @@
+.container {
+    display: grid;
+    height: 800px;
+    max-width: 100%;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 box9";
+    border: 5px solid #A2574F;
+    background-color: #FA877A;
+    gap: 40px;
+    color: #d3d1dd;
+
+}
+
+
+.container div {
+    background-color: #8d5752;
+    border: 5px solid #80453E;
+    height: 200px;
+    max-width: 250px;
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+.box1 {
+    grid-area: box1;
+    border-radius: 5px;
+    transition: height 1s ease;
+
+}
+
+.box1:hover {
+    height: 500px;
+    background-color: darkslateblue;
+}
+
+.box2 {
+    grid-area: box2;
+    border-radius: 5px;
+    transition: height ease-in 1s;
+}
+
+.box2:hover {
+    height: 500px;
+    background-color: darksalmon;
+}
+
+.box3 {
+    grid-area: box3;
+    border-radius: 5px;
+    transition: height ease-in-out 1s;
+}
+
+.box3:hover {
+    height: 500px;
+    background-color: darkslategray;
+}
+
+.box4 {
+    grid-area: box4;
+    border-radius: 5px;
+    transition: height ease-out 1s;
+}
+
+.box4:hover {
+    height: 500px;
+    background-color: coral;
+}
+
+.box5 {
+    grid-area: box5;
+    border-radius: 5px;
+    transition: height linear 1s;
+}
+
+.box5:hover {
+    height: 500px;
+    background-color: darkorchid;
+}
+
+.box6 {
+    grid-area: box6;
+    border-radius: 5px;
+    transition: height 2s step-end;
+}
+
+.box6:hover {
+    height: 500px;
+    background-color: mediumseagreen;
+}
+
+.box7 {
+    grid-area: box7;
+    border-radius: 5px;
+    transition: heigt 1s step-start;
+}
+
+.box7:hover {
+    height: 500px;
+    background-color: deeppink;
+}
+
+.box8 {
+    grid-area: box8;
+    border-radius: 5px;
+    transition: height 1s steps(4, end);
+}
+
+.box8:hover {
+    height: 500px;
+    background-color: lime;
+}
+
+.box9 {
+    grid-area: box9;
+    border-radius: 5px;
+    transition: height 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.box9:hover {
+    height: 500px;
+    background-color: peru;
+}
+
+
+
+@media (max-width: 320px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+        ;
+    }
+}
+
+@media (max-width: 600px)  {
+    .container {
+        grid-template-columns: repeat(2, fr);
+        grid-template-areas:
+            "box1 box1 box2 box2" 
+            "box3 box3 box4 box4" 
+            "box5 box5 box6 box6" 
+            "box7 box7 box8 box8" 
+            "box9 box9 box9 box9" 
+            
+    }
+}
